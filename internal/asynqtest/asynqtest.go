@@ -13,8 +13,8 @@ import (
 	"github.com/go-redis/redis/v7"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/hibiken/asynq/internal/base"
 	"github.com/rs/xid"
+	"github.com/zsiec/asynq/internal/base"
 )
 
 // ZSetEntry is an entry in redis sorted set.

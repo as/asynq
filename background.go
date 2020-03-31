@@ -15,9 +15,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/log"
-	"github.com/hibiken/asynq/internal/rdb"
+	"github.com/zsiec/asynq/internal/base"
+	"github.com/zsiec/asynq/internal/log"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 // Background is responsible for managing the background-task processing.

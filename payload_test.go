@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
+	h "github.com/zsiec/asynq/internal/asynqtest"
+	"github.com/zsiec/asynq/internal/base"
 )
 
 type payloadTest struct {

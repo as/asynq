@@ -11,8 +11,8 @@ import (
 
 	"github.com/go-redis/redis/v7"
 	"github.com/google/go-cmp/cmp"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/log"
+	h "github.com/zsiec/asynq/internal/asynqtest"
+	"github.com/zsiec/asynq/internal/log"
 )
 
 // This file defines test helper functions used by

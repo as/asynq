@@ -4,7 +4,7 @@
 
 package main
 
-import "github.com/hibiken/asynq/tools/asynqmon/cmd"
+import "github.com/zsiec/asynq/tools/asynqmon/cmd"
 
 func main() {
 	cmd.Execute()

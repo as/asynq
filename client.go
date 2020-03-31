@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/rs/xid"
+	"github.com/zsiec/asynq/internal/base"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 // A Client is responsible for scheduling tasks.

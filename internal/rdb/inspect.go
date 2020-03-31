@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq/internal/base"
 	"github.com/rs/xid"
 	"github.com/spf13/cast"
+	"github.com/zsiec/asynq/internal/base"
 )
 
 // Stats represents a state of queues at a certain time.

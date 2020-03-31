@@ -12,9 +12,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
 	"github.com/rs/xid"
+	h "github.com/zsiec/asynq/internal/asynqtest"
+	"github.com/zsiec/asynq/internal/base"
 )
 
 func TestCurrentStats(t *testing.T) {

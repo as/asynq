@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hibiken/asynq/internal/rdb"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 type scheduler struct {

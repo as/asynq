@@ -13,10 +13,10 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/rs/xid"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 var lsValidArgs = []string{"enqueued", "inprogress", "scheduled", "retry", "dead"}

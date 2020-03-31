@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/go-redis/redis/v7"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
+	h "github.com/zsiec/asynq/internal/asynqtest"
+	"github.com/zsiec/asynq/internal/base"
 )
 
 func BenchmarkDone(b *testing.B) {

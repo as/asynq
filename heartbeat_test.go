@@ -11,9 +11,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
+	h "github.com/zsiec/asynq/internal/asynqtest"
+	"github.com/zsiec/asynq/internal/base"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 func TestHeartbeater(t *testing.T) {

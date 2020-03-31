@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
+	"github.com/zsiec/asynq/internal/base"
+	"github.com/zsiec/asynq/internal/rdb"
 )
 
 // heartbeater is responsible for writing process info to redis periodically to

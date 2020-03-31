@@ -246,8 +246,8 @@ func (bg *Background) Run(handler Handler) {
 	}
 	bg.logger.Info("Starting processing")
 
-	bg.start(handler)
-	defer bg.stop()
+	bg.Start(handler)
+	defer bg.Stop()
 
 	bg.logger.Info("Send signal TSTP to stop processing new tasks")
 	bg.logger.Info("Send signal TERM or INT to terminate the process")
@@ -269,7 +269,7 @@ func (bg *Background) Run(handler Handler) {
 }
 
 // starts the background-task processing.
-func (bg *Background) start(handler Handler) {
+func (bg *Background) Start(handler Handler) {
 	bg.mu.Lock()
 	defer bg.mu.Unlock()
 	if bg.running {
@@ -287,7 +287,7 @@ func (bg *Background) start(handler Handler) {
 }
 
 // stops the background-task processing.
-func (bg *Background) stop() {
+func (bg *Background) Stop() {
 	bg.mu.Lock()
 	defer bg.mu.Unlock()
 	if !bg.running {

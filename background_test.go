@@ -32,7 +32,7 @@ func TestBackground(t *testing.T) {
 		return nil
 	}
 
-	bg.start(HandlerFunc(h))
+	bg.Start(HandlerFunc(h))
 
 	err := client.Enqueue(NewTask("send_email", map[string]interface{}{"recipient_id": 123}))
 	if err != nil {
@@ -44,7 +44,7 @@ func TestBackground(t *testing.T) {
 		t.Errorf("could not enqueue a task: %v", err)
 	}
 
-	bg.stop()
+	bg.Stop()
 }
 
 func TestGCD(t *testing.T) {

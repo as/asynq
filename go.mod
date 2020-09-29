@@ -5,7 +5,6 @@ go 1.13
 require (
 	github.com/go-redis/redis/v7 v7.2.0
 	github.com/google/go-cmp v0.4.0
-	github.com/hibiken/asynq v0.7.0
 	github.com/rs/xid v1.2.1
 	github.com/spf13/cast v1.3.1
 	go.uber.org/goleak v0.10.0

@@ -254,7 +254,7 @@ func (bg *Background) Run(handler Handler) {
 
 	// Wait for a signal to terminate.
 	sigs := make(chan os.Signal, 1)
-	signal.Notify(sigs, syscall.SIGTERM, syscall.SIGINT, syscall.SIGTSTP)
+	signal.Notify(sigs, syscall.SIGTERM, syscall.SIGINT)
 	for {
 		sig := <-sigs
 		if sig == syscall.SIGTSTP {
